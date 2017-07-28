@@ -21,15 +21,30 @@ html {
   box-sizing: inherit;
 }
 
+body {
+	color: $text-color;
+  font: $font-reg 100% / 1.4 $text-font;
+  margin-top: 40px;
+}
+
+pre {
+	font-family: $code-font;
+}
+
 /**
  * Basic styles for links
  */
 a {
   color: $brand-color;
+  padding: 0 $spc-h;
   text-decoration: none;
 
   @include on-event {
     color: $text-color;
     text-decoration: underline;
   }
+}
+
+section {
+  padding: 60px 0;
 }

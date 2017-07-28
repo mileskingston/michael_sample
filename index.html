@@ -10,39 +10,53 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="styles/css/main.css">
     </head>
     <body>
         <header class="header">
-            <a class="logo">
-                <img src="img/logo.svg" alt="logo" width="50" />
-            </a>
+            <div class="container">
+                <a class="logo" style="display:none;">
+                    <img src="img/logo.svg" alt="logo" width="50" />
+                </a>
 
-            <button>
-                <span class="burger-menu"></span>
-            </button>
+                <button>
+                    <span class="burger-menu"></span>
+                </button>
 
-            <nav class="main-menu">
-                <ul>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Sales</a></li>
-                    <li><a href="#">Restoration</a></li>
-                    <li><a href="#">Servicing</a></li>
-                    <li><a href="#">Contact us</a></li>
-                </ul>
-            </nav>
+                <nav class="main-menu">
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Sales</a></li>
+                        <li><a href="#">Restoration</a></li>
+                        <li><a href="#">Servicing</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <div id="main">
-            <section class="banner">
-                
-            </section>    
+            <div class="parallax-window" data-parallax="scroll" data-image-src="img/img-2.jpg" data-natural-width="1600" data-natural-height="1062" data-bleed="1"></div>
+            <section class="main">
+                <div class="container">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vulputate convallis malesuada. Donec placerat vitae erat sit amet tempor. Proin eu augue felis. Aenean ac suscipit orci. Vivamus consequat sem ut lorem euismod, at consectetur eros consequat. Vestibulum magna neque, faucibus a mi non, faucibus ornare tellus. Cras et velit tristique, auctor dui a, aliquet justo. Nunc ac eleifend est. Maecenas tristique auctor dictum. Cras consectetur ultricies neque ac rutrum. Vivamus a arcu fringilla, lacinia sem in, ullamcorper lorem. Praesent porttitor sed justo a vulputate. Maecenas venenatis eget nisi non sodales. Donec ac porta metus. Aliquam tincidunt ipsum nunc, nec blandit ligula rutrum a. Donec auctor lorem vel nulla convallis venenatis.</p>
+
+                        <p>Phasellus sagittis erat eu enim facilisis scelerisque. Integer imperdiet nunc in lorem posuere dictum. Nunc ut gravida diam. Sed vehicula suscipit rhoncus. Nulla justo erat, accumsan sit amet risus eu, suscipit feugiat mi. Morbi non ante feugiat, euismod ipsum a, ullamcorper massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean a sem convallis, congue est et, porttitor nulla. Aliquam erat volutpat. Proin at suscipit ante. Sed at dui a lacus malesuada convallis eu eu elit. Ut venenatis sit amet lectus consectetur malesuada.</p>
+
+                        <p>Praesent viverra tortor vitae turpis fringilla, rutrum porttitor magna commodo. Vestibulum malesuada vel lacus vitae interdum. Donec vitae urna eget erat laoreet iaculis molestie et elit. Vestibulum id ligula elementum, porttitor leo at, placerat sem. Duis sem lectus, malesuada finibus massa sed, ullamcorper viverra eros. Integer eget tortor non orci rutrum ultrices. Nullam ac semper nibh, ut pulvinar justo. Praesent quis sodales odio. Sed sed pharetra massa.</p>
+
+                        <p>In et velit viverra, feugiat urna sed, efficitur elit. Nam euismod odio quis tortor faucibus, nec rutrum metus suscipit. Vivamus eros tellus, facilisis ornare urna a, dapibus fermentum leo. Maecenas pulvinar ipsum id aliquet eleifend. Ut sed commodo enim, ut tempor neque. Phasellus eget quam sollicitudin, porttitor mi in, facilisis enim. Mauris interdum neque eu ex maximus auctor.</p>
+
+                        <p>Etiam consequat arcu non augue congue efficitur. Phasellus lobortis libero diam, a facilisis velit blandit at. Integer pulvinar imperdiet libero, ac feugiat ex pellentesque dictum. Ut ac imperdiet elit, eget accumsan sapien. Aliquam sit amet metus ut nulla cursus sodales ac at turpis. Mauris euismod, nisi non aliquet ullamcorper, felis turpis efficitur quam, vitae posuere massa erat at turpis. Sed in justo at ipsum fringilla iaculis et ac purus. Aliquam vel arcu vel lectus dignissim gravida ut a enim. Maecenas sit amet augue vulputate, aliquam dui ut, tincidunt nisl. Aliquam dolor nibh, volutpat at gravida id, suscipit a felis. Fusce ut justo in nibh lacinia sagittis. Donec nulla metus, posuere at sapien non, ullamcorper porttitor elit.</p>
+                    </div>
+                </div>
+            </section>
         </div>
 
         <footer class="footer"></footer>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/vendor/jquery-1.11.3.min.js"></script>
+        <script src="js/parallax.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
