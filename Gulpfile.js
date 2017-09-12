@@ -20,6 +20,8 @@ var gulp = require('gulp'),
 //         .pipe(gulp.dest('./css'))
 // );
 
+gulp.task('default', ['connect', 'sass:watch']);
+
 gulp.task('sass', function () {
   return gulp.src('styles/scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))

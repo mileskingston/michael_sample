@@ -10,51 +10,126 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
         <link rel="stylesheet" href="styles/css/main.css">
     </head>
     <body>
-        <header class="header">
-            <div class="container">
-                <a class="logo" style="display:none;">
-                    <img src="img/logo.svg" alt="logo" width="50" />
-                </a>
-
-                <button>
-                    <span class="burger-menu"></span>
-                </button>
-
-                <nav class="main-menu">
-                    <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Sales</a></li>
-                        <li><a href="#">Restoration</a></li>
-                        <li><a href="#">Servicing</a></li>
-                        <li><a href="#">Contact us</a></li>
-                    </ul>
-                </nav>
+        <nav class="navbar navbar-expand-md sticky-top">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
             </div>
-        </header>
+        </nav>
 
         <div id="main">
-            <div class="parallax-window" data-parallax="scroll" data-image-src="img/img-2.jpg" data-natural-width="1600" data-natural-height="1062" data-bleed="1"></div>
+            <div class="parallax-window" data-parallax="scroll" data-image-src="http://via.placeholder.com/1600x1049" data-natural-width="1600" data-natural-height="1062" data-bleed="1"></div>
+            <!-- <div class="parallax-window" data-parallax="scroll" data-image-src="img/img-2.jpg" data-natural-width="1600" data-natural-height="1062" data-bleed="1"></div> -->
             <section class="main">
                 <div class="container">
-                    <div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vulputate convallis malesuada. Donec placerat vitae erat sit amet tempor. Proin eu augue felis. Aenean ac suscipit orci. Vivamus consequat sem ut lorem euismod, at consectetur eros consequat. Vestibulum magna neque, faucibus a mi non, faucibus ornare tellus. Cras et velit tristique, auctor dui a, aliquet justo. Nunc ac eleifend est. Maecenas tristique auctor dictum. Cras consectetur ultricies neque ac rutrum. Vivamus a arcu fringilla, lacinia sem in, ullamcorper lorem. Praesent porttitor sed justo a vulputate. Maecenas venenatis eget nisi non sodales. Donec ac porta metus. Aliquam tincidunt ipsum nunc, nec blandit ligula rutrum a. Donec auctor lorem vel nulla convallis venenatis.</p>
-
-                        <p>Phasellus sagittis erat eu enim facilisis scelerisque. Integer imperdiet nunc in lorem posuere dictum. Nunc ut gravida diam. Sed vehicula suscipit rhoncus. Nulla justo erat, accumsan sit amet risus eu, suscipit feugiat mi. Morbi non ante feugiat, euismod ipsum a, ullamcorper massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean a sem convallis, congue est et, porttitor nulla. Aliquam erat volutpat. Proin at suscipit ante. Sed at dui a lacus malesuada convallis eu eu elit. Ut venenatis sit amet lectus consectetur malesuada.</p>
-
-                        <p>Praesent viverra tortor vitae turpis fringilla, rutrum porttitor magna commodo. Vestibulum malesuada vel lacus vitae interdum. Donec vitae urna eget erat laoreet iaculis molestie et elit. Vestibulum id ligula elementum, porttitor leo at, placerat sem. Duis sem lectus, malesuada finibus massa sed, ullamcorper viverra eros. Integer eget tortor non orci rutrum ultrices. Nullam ac semper nibh, ut pulvinar justo. Praesent quis sodales odio. Sed sed pharetra massa.</p>
-
-                        <p>In et velit viverra, feugiat urna sed, efficitur elit. Nam euismod odio quis tortor faucibus, nec rutrum metus suscipit. Vivamus eros tellus, facilisis ornare urna a, dapibus fermentum leo. Maecenas pulvinar ipsum id aliquet eleifend. Ut sed commodo enim, ut tempor neque. Phasellus eget quam sollicitudin, porttitor mi in, facilisis enim. Mauris interdum neque eu ex maximus auctor.</p>
-
-                        <p>Etiam consequat arcu non augue congue efficitur. Phasellus lobortis libero diam, a facilisis velit blandit at. Integer pulvinar imperdiet libero, ac feugiat ex pellentesque dictum. Ut ac imperdiet elit, eget accumsan sapien. Aliquam sit amet metus ut nulla cursus sodales ac at turpis. Mauris euismod, nisi non aliquet ullamcorper, felis turpis efficitur quam, vitae posuere massa erat at turpis. Sed in justo at ipsum fringilla iaculis et ac purus. Aliquam vel arcu vel lectus dignissim gravida ut a enim. Maecenas sit amet augue vulputate, aliquam dui ut, tincidunt nisl. Aliquam dolor nibh, volutpat at gravida id, suscipit a felis. Fusce ut justo in nibh lacinia sagittis. Donec nulla metus, posuere at sapien non, ullamcorper porttitor elit.</p>
-                    </div>
+                    <section class="section-images">
+                        <div class="row mb-3">
+                            <figure class="col col-md-6">
+                                <img src="http://via.placeholder.com/1600x1049" alt="" />
+                                <figcaption class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et magna nec magna dictum feugiat.
+                                </figcaption>
+                            </figure>
+                            <figure class="col col-md-6">
+                                <img src="http://via.placeholder.com/1600x1049" alt="" />
+                                <figcaption class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et magna nec magna dictum feugiat.
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="row">
+                            <figure class="col col-md-6">
+                                <img src="http://via.placeholder.com/1600x1049" alt="" />
+                                 <figcaption class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et magna nec magna dictum feugiat.
+                                </figcaption>
+                            </figure>
+                            <figure class="col col-md-6">
+                                <img src="http://via.placeholder.com/1600x1049" alt="" />
+                                <figcaption class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et magna nec magna dictum feugiat.
+                                </figcaption>
+                            </figurediv>
+                        </div>
+                    </section>
                 </div>
-            </section>
+
+                <div class="parallax-window" data-parallax="scroll" data-image-src="http://via.placeholder.com/1600x1049" data-natural-width="1600" data-natural-height="1062" data-bleed="1"></div>
+            <section>
         </div>
 
-        <footer class="footer"></footer>
+        <footer class="footer pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <ul>
+                            <li>
+                                <a href="#">Link Item 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Link Item 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Link Item 3</a>
+                            </li>
+                            <li>
+                                <a href="#">Link Item 4</a>
+                            </li>                                
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li>
+                                <a href="#">Link Item 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Link Item 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Link Item 3</a>
+                            </li>
+                            <li>
+                                <a href="#">Link Item 4</a>
+                            </li>                                
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li>
+                                <a href="#">Link Item 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Link Item 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Link Item 3</a>
+                            </li>
+                            <li>
+                                <a href="#">Link Item 4</a>
+                            </li>                                
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
         <script src="js/vendor/jquery-1.11.3.min.js"></script>
         <script src="js/parallax.min.js"></script>
         <script src="js/main.js"></script>

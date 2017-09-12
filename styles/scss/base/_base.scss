@@ -24,7 +24,6 @@ html {
 body {
 	color: $text-color;
   font: $font-reg 100% / 1.4 $text-font;
-  margin-top: 40px;
 }
 
 pre {
@@ -36,7 +35,6 @@ pre {
  */
 a {
   color: $brand-color;
-  padding: 0 $spc-h;
   text-decoration: none;
 
   @include on-event {
@@ -45,6 +43,6 @@ a {
   }
 }
 
-section {
-  padding: 60px 0;
+img {
+  max-width: 100%;
 }

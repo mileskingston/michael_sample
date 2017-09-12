@@ -422,8 +422,7 @@ html {
 
 body {
   color: #222222;
-  font: 500 100%/1.4 "Roboto", sans-serif;
-  margin-top: 40px; }
+  font: 500 100%/1.4 "Roboto", sans-serif; }
 
 pre {
   font-family: "Courier New", "Monaco", monospace; }
@@ -433,14 +432,13 @@ pre {
  */
 a {
   color: #e50050;
-  padding: 0 15px;
   text-decoration: none; }
   a:hover, a:active, a:focus {
     color: #222222;
     text-decoration: underline; }
 
-section {
-  padding: 60px 0; }
+img {
+  max-width: 100%; }
 
 .clearfix:after, .container:after {
   clear: both;
@@ -471,28 +469,46 @@ section {
   position: absolute;
   width: 1px; }
 
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+.navbar {
   min-height: 40px;
-  color: #fff;
-  background-color: #222; }
-  .header .logo {
-    float: left; }
-  .header .main-menu {
-    float: right; }
-    .header .main-menu ul {
-      float: left;
-      list-style: none;
-      float: left;
-      padding-left: 0; }
-      .header .main-menu ul li {
-        float: left; }
-    .header .main-menu ul li a {
-      color: #fff;
-      text-decoration: none; }
+  color: #d6d6d6;
+  background-color: #171717; }
+  .navbar a {
+    color: #d6d6d6; }
+  .navbar .logo {
+    display: inline-block; }
+  .navbar .menu {
+    flex: 0 0 70%; }
+  .navbar .main-menu {
+    float: left;
+    list-style: none;
+    float: left;
+    padding-left: 0;
+    margin: 0; }
+    .navbar .main-menu li {
+      float: left; }
+      .navbar .main-menu li:last-child {
+        display: inline-block; }
+        .navbar .main-menu li:last-child img {
+          width: 20px; }
+  .navbar h1 {
+    margin: 0;
+    font-size: 1em;
+    font-weight: normal;
+    color: white; }
+
+.burger-menu {
+  float: right; }
+
+.footer {
+  background-color: #424242;
+  color: #eee; }
+  .footer a {
+    color: #eee; }
+  .footer ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0; }
 
 .parallax-container {
   height: 500px;
@@ -501,3 +517,15 @@ section {
 .parallax-window {
   min-height: 500px;
   background: transparent; }
+
+.section-images {
+  padding: 3rem 0; }
+  .section-images figure {
+    margin: 0; }
+  .section-images .content {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    width: calc(100% - 30px);
+    padding: 1rem;
+    background-color: #f2f2f2; }
