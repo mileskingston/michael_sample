@@ -438,6 +438,10 @@ a {
     color: #222222;
     text-decoration: underline; }
 
+.btn {
+  background-color: #1E8BC3;
+  padding: .75rem; }
+
 h1 {
   margin-bottom: 2rem; }
 
@@ -499,7 +503,8 @@ p:last-child {
   .navbar a {
     color: #d6d6d6; }
   .navbar .logo {
-    display: inline-block; }
+    padding-top: 0;
+    padding-bottom: 0; }
   .navbar .menu {
     flex: 0 0 70%; }
   .navbar .main-menu {
@@ -510,12 +515,25 @@ p:last-child {
     margin: 0; }
     .navbar .main-menu li {
       float: left; }
-      .navbar .main-menu li:last-child {
+      .navbar .main-menu li.icon {
         display: inline-block; }
-        .navbar .main-menu li:last-child img {
+        .navbar .main-menu li.icon a:after {
+          display: none; }
+        .navbar .main-menu li.icon img {
           width: 20px; }
       .navbar .main-menu li a {
+        position: relative;
         font-size: 0.875rem; }
+        .navbar .main-menu li a:before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          transition: 0.3s; }
+        .navbar .main-menu li a:hover:before {
+          background-color: #1E8BC3; }
   .navbar h1 {
     margin: 0;
     font-size: 1em;
