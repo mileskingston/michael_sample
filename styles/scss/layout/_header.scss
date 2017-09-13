@@ -1,7 +1,13 @@
 .navbar {
 	min-height: 40px;
 	color: #d6d6d6;
-	background-color: #171717;
+	background-color: transparent;
+	// background-color: #171717;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 
 	a {
 		color: #d6d6d6;
@@ -30,6 +36,13 @@
 
 				img {
 					width: 20px;
+				}
+			}
+
+			a {
+				font-size: 0.875rem;
+				&:hover {
+					
 				}
 			}
 		}

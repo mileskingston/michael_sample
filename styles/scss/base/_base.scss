@@ -22,8 +22,9 @@ html {
 }
 
 body {
-	color: $text-color;
+  color: $text-color;
   font: $font-reg 100% / 1.4 $text-font;
+  -webkit-font-smoothing: antialiased;
 }
 
 pre {
@@ -43,6 +44,35 @@ a {
   }
 }
 
+h1 {
+  margin-bottom: 2rem;
+}
+h2, h3 {
+  margin-bottom: 1rem;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
 img {
   max-width: 100%;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* Columns */
+
+[class^="col-"] .content {
+  padding: 3rem;
+}
+
+[class^="col-"].background-img {
+  background-size: cover;
+  background-position: center;
 }
